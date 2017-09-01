@@ -1,3 +1,11 @@
+/*
+Things to remember:
+commas after making table columns
+primary key is two words
+not null and modifiers go at the end
+check all names and dont mistake jonny for jonathan
+*/
+
 drop database if exists contacts;
 
 create database contacts;
@@ -52,3 +60,5 @@ select ID, "656 Fir St.", "Los Angeles", "CA", "90320" from names where first="M
 
 insert into addresses (nameID, address, city, state, zip)
 select ID, "None", "None", "NO", "98765" from names where first="John" AND last="Jones";
+
+
